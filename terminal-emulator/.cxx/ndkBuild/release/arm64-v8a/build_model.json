@@ -1,0 +1,68 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer",
+      "sdkFolder": "C:\\Users\\work\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\build\\intermediates",
+      "gradleModulePathName": ":terminal-emulator",
+      "moduleRootFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator",
+      "makeFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\.cxx",
+      "cxxFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx",
+      "ndkFolder": "C:\\Users\\work\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [
+      "-std\u003dc11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Os",
+      "-fno-stack-protector",
+      "-Wl,--gc-sections"
+    ],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\build\\intermediates\\ndkBuild\\release\\lib",
+    "objFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\build\\intermediates\\ndkBuild\\release\\obj\\local",
+    "jsonFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release",
+    "gradleBuildOutputFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a",
+  "jsonFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\cxx\\release\\arm64-v8a",
+  "objFolder": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\build\\intermediates\\ndkBuild\\release\\obj\\local\\arm64-v8a",
+  "buildCommandFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a\\build_command.txt",
+  "buildOutputFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a\\build_output.txt",
+  "modelOutputFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a\\json_generation_record.json",
+  "compileCommandsJsonFile": "E:\\files\\PhD\\Olivetti\\AndroidStudioProjects\\openhab-installer\\terminal-emulator\\.cxx\\ndkBuild\\release\\arm64-v8a\\compile_commands.json"
+}

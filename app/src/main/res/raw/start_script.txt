@@ -1,0 +1,48 @@
+#!/bin/bash -e
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Install Ubuntu if it is not already installed
+
+clear
+
+if [ ! -d "jails/ubuntu" ]; then
+    apt-get update
+    apt-get -y install wget proot
+    mkdir -p ~/jails/ubuntu
+    cd ~/jails/ubuntu
+    #wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
+    bash ~/install-termux-ubuntu.sh
+    rm ubuntu.tar.gz
+fi
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Create openHAB install/run script and then write it to .bashrc in Ubuntu's file system
+
+openhab=$(cat <<EOF
+# start_uoh
+if [ ! -d "openhab2" ]; then
+    apt-get update
+    apt-get -y install openjdk-8-jre-headless
+    apt-get -y install wget
+    apt-get -y install unzip
+    #wget -O openhab.zip https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.4.0%2Fopenhab-2.4.0.zip
+    wget -O openhab.zip https://openhab.jfrog.io/openhab/libs-milestone-local/org/openhab/distro/openhab/2.5.0.M1/openhab-2.5.0.M1.zip
+    unzip openhab.zip -d openhab2
+    rm openhab.zip
+fi
+
+cd openhab2
+clear
+./start.sh
+# end_uoh
+EOF
+)
+
+# Remove University of Helsinki's existing scripts first
+sed -i -e "/# start_uoh/,/# end_uoh/d" ~/jails/ubuntu/ubuntu-fs/root/.bashrc
+echo "$openhab" >> ~/jails/ubuntu/ubuntu-fs/root/.bashrc
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Run Ubuntu
+cd ~/jails/ubuntu
+./start-ubuntu.sh
